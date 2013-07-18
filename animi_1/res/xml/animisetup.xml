@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:layout="@layout/activity_grid">
+        <PreferenceCategory android:title="@string/prefFelhasznalocsop">
+            <EditTextPreference android:title="@string/prefAzonositoT" android:key="@string/prefAzonositoK" android:summary="Felhasználónév a JOOMLA belépéshez"/>
+            <EditTextPreference android:title="@string/prefPasswdT" android:key="@string/prefPasswdK"/>
+        </PreferenceCategory><PreferenceCategory android:title="@string/prefWebSzerviz">
+            <EditTextPreference android:defaultValue="http://10.1.6.11/animiwebservice/" android:title="@string/prefJSONUlrT" android:key="@string/prefJSONUlr"/>
+            <EditTextPreference android:defaultValue="webservice_vendeg.php" android:title="@string/prefJSONVendegAllT" android:key="@string/prefJSONVendegAll"/>
+            <EditTextPreference android:defaultValue="webservice_kezelesall.php" android:title="@string/prefJSONKezelesAllT" android:key="@string/prefJSONKezelesAll"/>
+            <EditTextPreference android:title="@string/prefJSONKezelesT" android:defaultValue="webservice_kezelesid.php" android:key="@string/prefJSONKezelesid"/>
+            
+        </PreferenceCategory><PreferenceCategory android:title="AnimiServer">
+            <EditTextPreference android:key="@string/prefanimiserverulr" android:title="@string/prefanimiserverulr" android:defaultValue="http://10.1.6.11/serial-1/serial_com.php"/>
+            <EditTextPreference android:key="@string/animiserverIP" android:title="@string/animiserverIP" android:defaultValue="188.6.164.115"/>
+            <EditTextPreference android:key="animiserverPort" android:title="animiserverPort" android:defaultValue="8001"/>
+            
+        </PreferenceCategory>
+    </PreferenceScreen>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="20dp"
+    android:orientation="vertical"
+    android:paddingLeft="30dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:text="@string/Vendeg"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Nev"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <Spinner
+                    android:id="@+id/spinner_vendegek"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content" />
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp" >
+
+                    <TableRow
+                        android:id="@+id/tableRow_v1"
+                        android:layout_width="wrap_content"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/VendegKezelesei"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow_v2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TableLayout
+                            android:id="@+id/headervendeg"
+                            style="@style/HeaderRow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TableRow>
+
+                                <TextView
+                                    style="@style/HeaderText"
+                                    android:layout_width="95dp"
+                                    android:text="@string/Datum" />
+
+                                <TextView
+                                    style="@style/HeaderText"
+                                    android:layout_width="205dp"
+                                    android:text="@string/Megj" />
+                            </TableRow>
+                        </TableLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow_v3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <ScrollView
+                            android:id="@+id/table_scroll2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="360dp" >
+
+                            <TableLayout
+                                android:id="@+id/maintablevendegkezelesek"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" >
+                            </TableLayout>
+                        </ScrollView>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp" >
+
+                <TableRow
+                    android:id="@+id/tableRow_v22"
+                    android:layout_width="wrap_content"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/VendegKezelesReszletei"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:text="@string/Azonosito"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/tv_kez_azonosito"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="200dp"
+                        android:background="@drawable/border"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:text="@string/Anamnezis"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/tv_kez_anamnezis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:lines="4"
+                        android:maxLines="4"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:text="@string/Diagnozis"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/tv_kez_diagnozis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:lines="4"
+                        android:maxLines="4"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp" >
+
+                <TableRow
+                    android:id="@+id/tableRow_l1"
+                    android:layout_width="wrap_content"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/textViewl2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/Kezeleslepesei"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow_l2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TableLayout
+                        android:id="@+id/headerlepes"
+                        style="@style/HeaderRow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TableRow>
+                            <TextView
+                                style="@style/HeaderText"
+                                android:layout_width="75dp"
+                                android:text="@string/Sorsz" />
+
+                            <TextView
+                                style="@style/HeaderText"
+                                android:layout_width="150dp"
+                                android:text="@string/Lepes" />
+                            <TextView
+                                style="@style/HeaderText"
+                                android:layout_width="75dp"
+                                android:text="@string/Ido" />
+
+                            <TextView
+                                style="@style/HeaderText"
+                                android:layout_width="200dp"
+                                android:text="@string/Megjegyzes" />
+                            </TableRow>
+                    </TableLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow_l3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ScrollView
+                        android:id="@+id/table_scroll2l"
+                        android:layout_width="wrap_content"
+                        android:layout_height="360dp" >
+
+                        <TableLayout
+                            android:id="@+id/maintablekezeleslepesek"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+                        </TableLayout>
+                    </ScrollView>
+                </TableRow>
+            </TableLayout>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left" >
+    </LinearLayout>
+
+</LinearLayout>

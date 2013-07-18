@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_N5M-MN86EeK7RJHoHvm7FQ">
+  <packagedElement xmi:type="uml:Actor" xmi:id="_U7dgAN86EeK7RJHoHvm7FQ" name="Vendég">
+    <ownedUseCase xmi:id="_s4W-AN86EeK7RJHoHvm7FQ">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_ZdC00N86EeK7RJHoHvm7FQ" name="Aszisztens"/>
+    </ownedUseCase>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Animi Kezelő</string>
+    <string name="menu_settings">Settings</string>
+    <string name="KP_fej">Kezelő panel</string>
+    <string name="Vendeg">Vendég</string>
+    <string name="Kezelesek">Kezelések</string>
+    <string name="Késleltetlés">Késleltetés</string>
+    <string name="BtnStop">Stop</string>
+    <string name="BtnRestart">Újraindítás</string>
+    <string name="BtnPause">Pause</string>
+    <string name="BtnStart">Kezelés indítása</string>
+    <string name="animiserverIP">Animi szerver IP</string>
+    <string name="animiserverPort">Animi szerver Port</string>
+    <string name="animiserverTimeout">Animi szerver timeout</string>
+    <string name="prefanimiserverulr">Animi szerver ULR</string>
+    <string name="prefJSONUlr">JSONUlr</string>
+    <string name="prefJSONUlrT">JSON Ulr</string>
+    <string name="prefJSONVendegAll">JSON Vendég all</string>
+    <string name="prefJSONVendegAllT">JSON Összes vendég</string>
+    <string name="prefJSONKezelesAll">JSON Kezelés all</string>
+    <string name="prefJSONKezelesAllT">JSON Összes Kezelés</string>
+    <string name="prefWebSzerviz">Webszervíz</string>
+    <string name="prefFelhasznalocsop">Felhasználói adatok</string>
+    <string name="prefAzonositoK">Azonosito</string>
+    <string name="prefAzonositoT">Azonosító</string>
+    <string name="prefPasswdK">Jelszo</string>
+    <string name="prefPasswdT">Jelszó</string>
+    <string name="viewlepes">Lépés</string>
+    <string name="viewido">Idő</string>
+    <string name="viewAktszin">Aktuális szín</string>
+    <string name="prefJSONKezelesid">prefJSONKezelesid</string>
+    <string name="prefJSONKezelesT">Kezelés ID</string>
+    <string name="sorszam">sorszam</string>
+    <string name="NotInternet">Nincs internet kapcsolat</string>
+    <string name="NotSer2net">Nincs kapcsolat az ASZED-el</string>
+    <string name="hiba_1">HIBA!! Ékezetes a kezelés azonosítója</string>
+    <string name="bs">/</string>
+    <string name="zero">0</string>
+    <string name="VendegKezelesei">A vendég kezelései</string>
+    <string name="Sorsz">Sorsz.</string>
+    <string name="Nev">Név</string>
+    <string name="Szin">Szín</string>
+    <string name="SzinBeallitas">Szín beállítás</string>
+    <string name="Datum">Dátum</string>
+    <string name="Megj">Leírás</string>
+    <string name="Leiras">Leírás</string>
+    <string name="Diagnozis">Diagnózis</string>
+    <string name="Anamnezis">Anamnézis</string>
+    <string name="Btnstarthint">Mentés és indítás</string>
+    <string name="title_activity_aszed_teszt_">Aszed_teszt_Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_main_tab">MainTabActivity</string>
+    <string name="VendegKezelesReszletei">A kezelés részletei</string>
+    <string name="Azonosito">Azonosító</string>
+    <string name="Kezeleslepesei">A kezelés lépései</string>
+    <string name="Lepes">Lépés</string>
+    <string name="Ido">Idő</string>
+    <string name="Megjegyzes">Megjegyzés</string>
+    
+</resources>
