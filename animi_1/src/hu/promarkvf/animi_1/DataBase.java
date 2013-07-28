@@ -16,12 +16,12 @@ import android.net.http.AndroidHttpClient;
 import android.os.AsyncTask;
 import android.util.Log;
 
-public class DataRead extends AsyncTask<String, Integer, String> {
+public class DataBase extends AsyncTask<String, Integer, String> {
 	private Context context = null;
 	private ProgressDialog progressDialog = null;
 	private long responseLength;
 
-	public DataRead(Context context) {
+	public DataBase(Context context) {
 		super();
 		this.context = context;
 	}

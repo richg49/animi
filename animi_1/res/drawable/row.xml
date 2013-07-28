@@ -5,5 +5,5 @@
     <item android:drawable="@drawable/row_pressed" android:state_enabled="true" android:state_pressed="true"/>
     <item android:drawable="@drawable/row_focused" android:state_enabled="true" android:state_focused="true"/>
     <item android:drawable="@drawable/row_enabled" android:state_enabled="true"/>
-
+    
 </selector>

@@ -24,7 +24,7 @@ public class VendegKezelesek {
 				// --- JSON feldolgozás
 				for ( int i = 1; i <= db; i++ ) {
 					JSONObject jsonkezelesekr = jsonkezelesek.getJSONObject(Integer.toString(i));
-					vendegKezelesek[i-1] = new VendegKezeles(jsonkezelesekr.getInt("id"), jsonkezelesekr.getString("leiras"), jsonkezelesekr.getInt("mw_kezeles_id"), jsonkezelesekr.getString("datum"));
+					vendegKezelesek[i-1] = new VendegKezeles(jsonkezelesekr.getInt("id"), jsonkezelesekr.getString("azonosito"), jsonkezelesekr.getString("leiras"), jsonkezelesekr.getInt("mw_kezeles_id"), jsonkezelesekr.getString("datum"));
 				}
 			}
 		}

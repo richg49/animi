@@ -33,52 +33,78 @@ public final class R {
         public static final int ambilwarna_hue=0x7f020003;
         public static final int ambilwarna_target=0x7f020004;
         public static final int border=0x7f020005;
-        public static final int ic_launcher=0x7f020006;
-        public static final int index=0x7f020007;
-        public static final int row=0x7f020008;
-        public static final int row_disabled=0x7f020009;
-        public static final int row_enabled=0x7f02000a;
-        public static final int row_enabled_2=0x7f02000b;
-        public static final int row_focused=0x7f02000c;
-        public static final int row_pressed=0x7f02000d;
-        public static final int row_state=0x7f02000e;
-        public static final int tr_drawable=0x7f02000f;
-        public static final int tr_pressed=0x7f020010;
-        public static final int tr_state=0x7f020011;
+        public static final int button=0x7f020006;
+        public static final int button_disabled=0x7f020007;
+        public static final int button_enabled=0x7f020008;
+        public static final int button_focused=0x7f020009;
+        public static final int button_pressed=0x7f02000a;
+        public static final int button_state=0x7f02000b;
+        public static final int ic_launcher=0x7f02000c;
+        public static final int index=0x7f02000d;
+        public static final int row=0x7f02000e;
+        public static final int row_disabled=0x7f02000f;
+        public static final int row_enabled=0x7f020010;
+        public static final int row_enabled_2=0x7f020011;
+        public static final int row_focused=0x7f020012;
+        public static final int row_pressed=0x7f020013;
+        public static final int row_state=0x7f020014;
+        public static final int tr_drawable=0x7f020015;
+        public static final int tr_pressed=0x7f020016;
+        public static final int tr_state=0x7f020017;
     }
     public static final class id {
+        public static final int HeaderStart=0x7f09003e;
+        public static final int LinearLayout1=0x7f090031;
         public static final int TextView03=0x7f090021;
         public static final int TextViewAktIdo=0x7f090020;
+        public static final int TextViewMegjegyzes=0x7f09005d;
         public static final int TextViewOsszIdo=0x7f090022;
-        public static final int action_settings=0x7f09004b;
-        public static final int ambilwarna_cursor=0x7f090034;
-        public static final int ambilwarna_state=0x7f090036;
-        public static final int ambilwarna_target=0x7f090035;
-        public static final int ambilwarna_viewContainer=0x7f090031;
-        public static final int ambilwarna_viewHue=0x7f090033;
-        public static final int ambilwarna_viewSatBri=0x7f090032;
-        public static final int ambilwarna_warnaBaru=0x7f090038;
-        public static final int ambilwarna_warnaLama=0x7f090037;
+        public static final int TextViewSMegjegyzes=0x7f09004a;
+        public static final int TextViewUMegjegyzes=0x7f090054;
+        public static final int action_settings=0x7f090062;
+        public static final int ambilwarna_cursor=0x7f090038;
+        public static final int ambilwarna_state=0x7f09003a;
+        public static final int ambilwarna_target=0x7f090039;
+        public static final int ambilwarna_viewContainer=0x7f090035;
+        public static final int ambilwarna_viewHue=0x7f090037;
+        public static final int ambilwarna_viewSatBri=0x7f090036;
+        public static final int ambilwarna_warnaBaru=0x7f09003c;
+        public static final int ambilwarna_warnaLama=0x7f09003b;
         public static final int anamnezis=0x7f09000e;
+        public static final int btn_megj_cancel=0x7f090034;
+        public static final int btn_megj_ok=0x7f090033;
+        public static final int buttonClear=0x7f09004e;
+        public static final int buttonInd=0x7f09004d;
         public static final int buttonPause=0x7f09002d;
         public static final int buttonRestart=0x7f09002e;
+        public static final int buttonRogzit=0x7f09004f;
         public static final int buttonStart=0x7f09002f;
         public static final int buttonStop=0x7f09002c;
+        public static final int button_Ustart=0x7f090055;
+        public static final int button_ujra=0x7f09005e;
         public static final int diagnozis=0x7f09000c;
+        public static final int editTextMegjegyzes=0x7f090032;
+        public static final int editTextjegyzet=0x7f09004c;
+        public static final int headerkezeles=0x7f090050;
         public static final int headerlepes=0x7f090046;
         public static final int headerszin1=0x7f090017;
         public static final int headerszin2=0x7f090019;
         public static final int headervendeg=0x7f090012;
-        public static final int layout=0x7f09003a;
+        public static final int kezeles_view=0x7f09003d;
+        public static final int layout=0x7f090056;
         public static final int leiras=0x7f09000a;
-        public static final int maintablekezeleslepesek=0x7f090049;
+        public static final int maintableSkezeleslepesek=0x7f090049;
+        public static final int maintableUkezeleslepesek=0x7f090053;
+        public static final int maintablekezelesek=0x7f090051;
+        public static final int maintablekezeleslepesek=0x7f09005c;
         public static final int maintablelepes=0x7f09001c;
         public static final int maintablevendeg=0x7f090015;
-        public static final int maintablevendegkezelesek=0x7f09003b;
-        public static final int menu_settings=0x7f09004a;
+        public static final int maintablevendegkezelesek=0x7f090057;
+        public static final int menu_ClearAszed=0x7f090060;
+        public static final int menu_ResetAszed=0x7f090061;
+        public static final int menu_settings=0x7f09005f;
         public static final int realtabcontent=0x7f090030;
         public static final int scrollView1=0x7f09001b;
-        public static final int section_label=0x7f090039;
         public static final int spinner_kezelesek=0x7f090007;
         public static final int spinner_vendegek=0x7f090004;
         public static final int surfaceView2=0x7f09002a;
@@ -88,8 +114,8 @@ public final class R {
         public static final int tableRow13=0x7f09002b;
         public static final int tableRow14=0x7f090008;
         public static final int tableRow2=0x7f090023;
-        public static final int tableRow23=0x7f09003f;
-        public static final int tableRow24=0x7f090041;
+        public static final int tableRow23=0x7f090041;
+        public static final int tableRow24=0x7f09005a;
         public static final int tableRow3=0x7f090002;
         public static final int tableRow4=0x7f090005;
         public static final int tableRow6=0x7f090016;
@@ -100,19 +126,20 @@ public final class R {
         public static final int tableRow_l3=0x7f090047;
         public static final int tableRow_v1=0x7f09000f;
         public static final int tableRow_v2=0x7f090011;
-        public static final int tableRow_v22=0x7f09003c;
+        public static final int tableRow_v22=0x7f09003f;
         public static final int tableRow_v3=0x7f090013;
         public static final int table_scroll1=0x7f090001;
         public static final int table_scroll2=0x7f090014;
         public static final int table_scroll2l=0x7f090048;
         public static final int textView1=0x7f090026;
         public static final int textView2=0x7f090010;
-        public static final int textView22=0x7f09003d;
+        public static final int textView22=0x7f090040;
         public static final int textView3=0x7f090009;
         public static final int textView4=0x7f09000b;
         public static final int textView5=0x7f09000d;
         public static final int textViewAktSzin=0x7f090029;
         public static final int textViewFejlec=0x7f090000;
+        public static final int textViewFeljegyzes=0x7f09004b;
         public static final int textViewIdo=0x7f09001f;
         public static final int textViewKezelesek=0x7f090006;
         public static final int textViewLepesAktualis=0x7f090025;
@@ -120,44 +147,62 @@ public final class R {
         public static final int textViewVendeg=0x7f090003;
         public static final int textViewl2=0x7f090044;
         public static final int textViewlepes=0x7f090024;
-        public static final int tv_kez_anamnezis=0x7f090040;
-        public static final int tv_kez_azonosito=0x7f09003e;
-        public static final int tv_kez_diagnozis=0x7f090042;
+        public static final int tv_kez_anamnezis=0x7f090059;
+        public static final int tv_kez_azonosito=0x7f090058;
+        public static final int tv_kez_diagnozis=0x7f09005b;
+        public static final int tv_kez_leiras=0x7f090052;
+        public static final int tv_start_kez_leiras=0x7f090042;
     }
     public static final class layout {
         public static final int activity_grid=0x7f030000;
         public static final int activity_main_tab=0x7f030001;
-        public static final int ambilwarna_dialog=0x7f030002;
-        public static final int fragment_main_tab_dummy=0x7f030003;
-        public static final int vendeg_view=0x7f030004;
+        public static final int activity_mod_megj=0x7f030002;
+        public static final int ambilwarna_dialog=0x7f030003;
+        public static final int startkezeles_view=0x7f030004;
+        public static final int ujkezeles_view=0x7f030005;
+        public static final int vendeg_view=0x7f030006;
     }
     public static final class menu {
         public static final int activity_main=0x7f080000;
-        public static final int aszed_teszt_=0x7f080001;
-        public static final int main_tab=0x7f080002;
+        public static final int activity_startkezeles=0x7f080001;
+        public static final int aszed_teszt_=0x7f080002;
+        public static final int main_tab=0x7f080003;
     }
     public static final class string {
+        public static final int AktLepesInditasa=0x7f060044;
         public static final int Anamnezis=0x7f06002e;
         public static final int Azonosito=0x7f060037;
+        public static final int BtnMegse=0x7f06003f;
         public static final int BtnPause=0x7f060008;
         public static final int BtnRestart=0x7f060007;
+        public static final int BtnRogzit=0x7f06003e;
         public static final int BtnStart=0x7f060009;
         public static final int BtnStop=0x7f060006;
         public static final int Btnstarthint=0x7f06002f;
+        public static final int ClearAszed=0x7f060048;
         public static final int Datum=0x7f06002a;
         public static final int Diagnozis=0x7f06002d;
+        public static final int FejlecKezelesek=0x7f060040;
+        public static final int Feljegyzes=0x7f060043;
         public static final int Ido=0x7f06003a;
         public static final int KP_fej=0x7f060002;
+        public static final int KezelesRogzitese=0x7f060045;
+        public static final int KezelesRogziteseOK=0x7f060046;
         public static final int Kezelesek=0x7f060004;
         public static final int Kezeleslepesei=0x7f060038;
+        public static final int Kezelesmodositas=0x7f06003d;
+        public static final int Kezelesujra=0x7f06003c;
         public static final int Késleltetlés=0x7f060005;
         public static final int Leiras=0x7f06002c;
         public static final int Lepes=0x7f060039;
         public static final int Megj=0x7f06002b;
         public static final int Megjegyzes=0x7f06003b;
         public static final int Nev=0x7f060027;
+        public static final int NincsKezeles=0x7f060042;
+        public static final int NincsVendeg=0x7f060041;
         public static final int NotInternet=0x7f060020;
         public static final int NotSer2net=0x7f060021;
+        public static final int ResetAszed=0x7f060047;
         public static final int Sorsz=0x7f060026;
         public static final int Szin=0x7f060028;
         public static final int SzinBeallitas=0x7f060029;
@@ -202,11 +247,13 @@ public final class R {
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
     
 
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
+
         
 
         Base application theme for API 11+. This theme completely replaces
@@ -229,6 +276,7 @@ public final class R {
         public static final int BodyText=0x7f070005;
         public static final int HeaderRow=0x7f070002;
         public static final int HeaderText=0x7f070003;
+        public static final int button=0x7f070006;
     }
     public static final class xml {
         public static final int animisetup=0x7f040000;

@@ -4,8 +4,10 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
     android:orientation="vertical"
-    android:paddingLeft="30dp" >
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp" >
 
     <TextView
         android:layout_width="wrap_content"
@@ -75,7 +77,7 @@
 
                                 <TextView
                                     style="@style/HeaderText"
-                                    android:layout_width="95dp"
+                                    android:layout_width="105dp"
                                     android:text="@string/Datum" />
 
                                 <TextView
@@ -94,7 +96,7 @@
                         <ScrollView
                             android:id="@+id/table_scroll2"
                             android:layout_width="wrap_content"
-                            android:layout_height="360dp" >
+                            android:layout_height="340dp" >
 
                             <TableLayout
                                 android:id="@+id/maintablevendegkezelesek"
@@ -134,7 +136,6 @@
                         android:id="@+id/textView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/border"
                         android:text="@string/Azonosito"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -142,22 +143,22 @@
                         android:id="@+id/tv_kez_azonosito"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:minWidth="200dp"
                         android:background="@drawable/border"
+                        android:minWidth="200dp"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
                 </TableRow>
 
                 <TableRow
                     android:id="@+id/tableRow23"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
 
                     <TextView
                         android:id="@+id/textView3"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
-                        android:background="@drawable/border"
-                        android:gravity="center"
+                        android:gravity="center_vertical"
                         android:text="@string/Anamnezis"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -174,14 +175,14 @@
                 <TableRow
                     android:id="@+id/tableRow24"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
 
                     <TextView
                         android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
-                        android:background="@drawable/border"
-                        android:gravity="center"
+                        android:gravity="center_vertical"
                         android:text="@string/Diagnozis"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -196,84 +197,120 @@
                 </TableRow>
             </TableLayout>
 
-            <TableLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp" >
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical" >
 
-                <TableRow
-                    android:id="@+id/tableRow_l1"
-                    android:layout_width="wrap_content"
-                    android:gravity="center" >
-
-                    <TextView
-                        android:id="@+id/textViewl2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="@string/Kezeleslepesei"
-                        android:textAppearance="?android:attr/textAppearanceMedium" />
-                </TableRow>
-
-                <TableRow
-                    android:id="@+id/tableRow_l2"
+                <TableLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" >
 
-                    <TableLayout
-                        android:id="@+id/headerlepes"
-                        style="@style/HeaderRow"
+                    <TableRow
+                        android:id="@+id/tableRow_l1"
+                        android:layout_width="wrap_content"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/textViewl2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/Kezeleslepesei"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow_l2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" >
 
-                        <TableRow>
-                            <TextView
-                                style="@style/HeaderText"
-                                android:layout_width="75dp"
-                                android:text="@string/Sorsz" />
-
-                            <TextView
-                                style="@style/HeaderText"
-                                android:layout_width="150dp"
-                                android:text="@string/Lepes" />
-                            <TextView
-                                style="@style/HeaderText"
-                                android:layout_width="75dp"
-                                android:text="@string/Ido" />
-
-                            <TextView
-                                style="@style/HeaderText"
-                                android:layout_width="200dp"
-                                android:text="@string/Megjegyzes" />
-                            </TableRow>
-                    </TableLayout>
-                </TableRow>
-
-                <TableRow
-                    android:id="@+id/tableRow_l3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" >
-
-                    <ScrollView
-                        android:id="@+id/table_scroll2l"
-                        android:layout_width="wrap_content"
-                        android:layout_height="360dp" >
-
                         <TableLayout
-                            android:id="@+id/maintablekezeleslepesek"
-                            android:layout_width="fill_parent"
+                            android:id="@+id/headerlepes"
+                            style="@style/HeaderRow"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content" >
+
+                            <TableRow>
+
+                                <TextView
+                                    style="@style/HeaderText"
+                                    android:layout_width="70dp"
+                                    android:text="@string/Sorsz" />
+
+                                <TextView
+                                    style="@style/HeaderText"
+                                    android:layout_width="120dp"
+                                    android:text="@string/Lepes" />
+
+                                <TextView
+                                    style="@style/HeaderText"
+                                    android:layout_width="190dp"
+                                    android:text="@string/Megjegyzes" />
+
+                                <TextView
+                                    style="@style/HeaderText"
+                                    android:layout_width="70dp"
+                                    android:text="@string/Szin" />
+                                </TableRow>
                         </TableLayout>
-                    </ScrollView>
-                </TableRow>
-            </TableLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow_l3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <ScrollView
+                            android:id="@+id/table_scroll2l"
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp" >
+
+                            <TableLayout
+                                android:id="@+id/maintablekezeleslepesek"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" >
+                            </TableLayout>
+                        </ScrollView>
+                    </TableRow>
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/Megjegyzes"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/TextViewMegjegyzes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:lines="7" />
+            </LinearLayout>
         </TableRow>
     </TableLayout>
 
     <LinearLayout
+        style="@android:style/ButtonBar"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:gravity="left" >
+        android:layout_gravity="bottom"
+        android:layout_marginTop="15dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/button_ujra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="35dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/Kezelesujra" />
     </LinearLayout>
 
 </LinearLayout>

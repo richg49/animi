@@ -61,5 +61,18 @@
     <string name="Lepes">Lépés</string>
     <string name="Ido">Idő</string>
     <string name="Megjegyzes">Megjegyzés</string>
+    <string name="Kezelesujra">Aktuális kezelés újra</string>
+    <string name="Kezelesmodositas">Aktuális kezelés módosítás</string>
+    <string name="BtnRogzit">Visszaír</string>
+    <string name="BtnMegse">Mégse</string>
+    <string name="FejlecKezelesek">Elérhető kezelések</string>
+    <string name="NincsVendeg">Nincs vendég kiválasztva</string>
+    <string name="NincsKezeles">Nincs kezelés kiválasztva</string>
+    <string name="Feljegyzes">. lépés feljegyzése</string>
+    <string name="AktLepesInditasa">. lépés indítása</string>
+    <string name="KezelesRogzitese">Kezelés adatainak rögzítése</string>
+    <string name="KezelesRogziteseOK">Kezelés adatainak rögzítése sikerült</string>
+    <string name="ResetAszed">ASZED reset</string>
+   <string name="ClearAszed">ASZED törlése</string>
     
 </resources>

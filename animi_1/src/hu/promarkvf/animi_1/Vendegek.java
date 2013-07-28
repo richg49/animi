@@ -32,8 +32,9 @@ public class Vendegek {
 				JSONObject jObject = new JSONObject(s);
 				int id = jObject.getInt("id");
 				String nev = URLDecoder.decode(jObject.getString("nev"), "UTF-8");
-				Vendegek.vendegek[i] = new Vendeg(id, nev, null);
-				this.nevek[i] = nev;
+				String rnev = URLDecoder.decode(jObject.getString("username"), "UTF-8");
+				Vendegek.vendegek[i] = new Vendeg(id, nev, rnev, null);
+				this.nevek[i] = nev + " \"" + rnev + "\"";
 			}
 		}
 		catch ( JSONException e ) {
@@ -50,6 +51,15 @@ public class Vendegek {
 		}
 		else {
 			return 0;
+		}
+
+	}
+	public Vendeg GetVendeg(int pos) {
+		if ( Vendegek.vendegek != null && Vendegek.vendegek.length > pos && pos >= 0 ) {
+			return Vendegek.vendegek[pos];
+		}
+		else {
+			return null;
 		}
 
 	}

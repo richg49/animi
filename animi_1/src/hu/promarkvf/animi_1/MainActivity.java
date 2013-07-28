@@ -537,18 +537,6 @@ public class MainActivity extends Activity {
 							TextView tvlepes = (TextView) findViewById(R.id.textViewLepesAktualis);
 							if ( kezeles.osszlepes.intValue() >= kezelesindex ) {
 								tvlepes.setText(String.valueOf(Integer.toString(kezelesindex)));
-								/*
-								 * String szinek[] =
-								 * kezeles.lepes[kezelesindex].
-								 * pszin.split("[(,)]"); if( szinek.length >=3 )
-								 * { r = Integer.parseInt(szinek[1].trim()); g =
-								 * Integer.parseInt(szinek[2].trim()); b =
-								 * Integer.parseInt(szinek[3].trim());
-								 * sv.setBackgroundColor(Color.rgb(r,g,b));
-								 * 
-								 * } else {
-								 * sv.setBackgroundColor(Color.rgb(0,0,0)); }
-								 */
 								sv.setBackgroundColor(Color.rgb(kezeles.lepes[kezelesindex].szin_r, kezeles.lepes[kezelesindex].szin_g, kezeles.lepes[kezelesindex].szin_b));
 								reszIdo = kezeles.lepes[kezelesindex].ido;
 								// Vezérlés
@@ -562,8 +550,10 @@ public class MainActivity extends Activity {
 											List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
 											nameValuePairs.add(new BasicNameValuePair("parancs", "Write"));
 											nameValuePairs.add(new BasicNameValuePair("fenyero", "1/5"));
-											nameValuePairs.add(new BasicNameValuePair("pszin", kezeles.lepes[kezelesindex].pszin));
-											nameValuePairs.add(new BasicNameValuePair("pixeltomb", kezeles.lepes[kezelesindex].pxtomb));
+											nameValuePairs.add(new BasicNameValuePair("szin_r", String.valueOf(kezeles.lepes[kezelesindex].szin_r)));
+											nameValuePairs.add(new BasicNameValuePair("szin_g", String.valueOf(kezeles.lepes[kezelesindex].szin_g)));
+											nameValuePairs.add(new BasicNameValuePair("szin_b", String.valueOf(kezeles.lepes[kezelesindex].szin_b)));
+											nameValuePairs.add(new BasicNameValuePair("pxtomb", kezeles.lepes[kezelesindex].pxtomb));
 											httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 
 											// Execute HTTP Post Request
@@ -765,7 +755,9 @@ public class MainActivity extends Activity {
 				lepesobject.put("lepes", URLEncoder.encode(kezeles.lepes[i].lepes, "UTF-8"));
 				lepesobject.put("ido", kezeles.lepes[i].ido);
 				lepesobject.put("megjegyzes", URLEncoder.encode(kezeles.lepes[i].megjegyzes, "UTF-8"));
-				lepesobject.put("pszin", kezeles.lepes[i].pszin);
+				lepesobject.put("szin_r", kezeles.lepes[i].szin_r);
+				lepesobject.put("szin_g", kezeles.lepes[i].szin_g);
+				lepesobject.put("szin_b", kezeles.lepes[i].szin_b);
 				lepesobject.put("pxtomb", kezeles.lepes[i].pxtomb);
 				mysqlobject.put(Integer.toString(i), lepesobject);
 
@@ -923,10 +915,9 @@ public class MainActivity extends Activity {
 									if ( arg0.getParent() instanceof TableRow ) {
 										TableRow rr = (TableRow) arg0.getParent();
 										int rowindex = table.indexOfChild(rr) + 1;
-										kezeles.lepes[rowindex].pszin = String.format("rgb(%d, %d, %d)", ( 0x00FF0000 & color ) / ( 256 * 256 ), ( 0x0000FF00 & color ) / 256, 0x000000FF & color);
-										kezeles.lepes[rowindex].szin_r = ( 0x00FF0000 & color ) / ( 256 * 256 );
-										kezeles.lepes[rowindex].szin_g = ( 0x0000FF00 & color ) / 256;
-										kezeles.lepes[rowindex].szin_b = 0x000000FF & color;
+										kezeles.lepes[rowindex].szin_r = Color.red(color);
+										kezeles.lepes[rowindex].szin_g = Color.green(color);
+										kezeles.lepes[rowindex].szin_b = Color.blue(color);
 										arg0.setBackgroundColor(color);
 									}
 								}
@@ -947,18 +938,9 @@ public class MainActivity extends Activity {
 									TableRow rr = (TableRow) arg1.getParent().getParent();
 									// rr.setBackgroundColor(szinek[arg2]);
 									int rowindex = table.indexOfChild(rr) + 1;
-									// String strColor1 = String.format("%X",
-									// szinek[arg2]);
-									// String strColor =
-									// String.format("rgb(%d, %d, %d)",
-									// (0x00FF0000 & szinek[arg2])/(256*256),
-									// (0x0000FF00 & szinek[arg2])/256,
-									// 0x000000FF & szinek[arg2]);
-									// System.out.println(strColor);
-									kezeles.lepes[rowindex].pszin = String.format("rgb(%d, %d, %d)", ( 0x00FF0000 & szinek[arg2] ) / ( 256 * 256 ), ( 0x0000FF00 & szinek[arg2] ) / 256, 0x000000FF & szinek[arg2]);
-									kezeles.lepes[rowindex].szin_r = ( 0x00FF0000 & szinek[arg2] ) / ( 256 * 256 );
-									kezeles.lepes[rowindex].szin_g = ( 0x0000FF00 & szinek[arg2] ) / 256;
-									kezeles.lepes[rowindex].szin_b = 0x000000FF & szinek[arg2];
+									kezeles.lepes[rowindex].szin_r = Color.red(szinek[arg2]);
+									kezeles.lepes[rowindex].szin_g = Color.green(szinek[arg2]);
+									kezeles.lepes[rowindex].szin_b = Color.blue(szinek[arg2]);
 								}
 								arg1.setBackgroundColor(szinek[arg2]);
 							}

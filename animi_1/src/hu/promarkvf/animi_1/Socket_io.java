@@ -8,11 +8,14 @@ import java.net.Socket;
 import java.net.SocketAddress;
 import java.net.UnknownHostException;
 
+import android.os.NetworkOnMainThreadException;
+
 public class Socket_io {
 	private Socket socket = null;
 	private DataOutputStream dataOutputStream = null;
 	private DataInputStream dataInputStream = null;
 	private boolean isConnect = false;
+	private String log ="";
 
 	public Socket_io(String dest_ip, int dest_port, int timeout) {
 		try {
@@ -22,18 +25,27 @@ public class Socket_io {
 			dataOutputStream = new DataOutputStream(socket.getOutputStream());
 			dataInputStream = new DataInputStream(socket.getInputStream());
 			isConnect = true;
+			log = "";
 		}
 		catch ( UnknownHostException e ) {
 			isConnect = false;
 			e.printStackTrace();
+			log = e.toString();
 		}
 		catch ( IOException e ) {
 			isConnect = false;
 			e.printStackTrace();
+			log = e.toString();
 		}
 		catch ( IllegalArgumentException e ) {
 			isConnect = false;
 			e.printStackTrace();
+			log = e.toString();
+		}
+		catch ( NetworkOnMainThreadException e ) {
+			isConnect = false;
+			e.printStackTrace();
+			log = e.toString();
 		}
 	}
 
@@ -129,6 +141,7 @@ public class Socket_io {
 		if ( socket != null ) {
 			try {
 				socket.close();
+				isConnect = false;
 			}
 			catch ( IOException e ) {
 				e.printStackTrace();
@@ -164,4 +177,7 @@ public class Socket_io {
 		return isConnect;
 	}
 
+	public String GetLog() {
+		return log;
+	}
 }

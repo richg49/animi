@@ -29,6 +29,19 @@ public class Kezeles {
 		lepes = null;
 	}
 
+	public Kezeles(int id, String azonosito, String leiras) {
+		this.kezeles_id = id;
+		this.azonosito = azonosito;
+		this.berendezes_dim1 = 0;
+		this.berendezes_dim2 = 0;
+		this.leiras = leiras;
+		this.diagnozis = "";
+		this.anamnezis = "";
+		this.osszlepes = 0;
+		this.osszido = 0;
+		this.lepes = null;
+	}
+
 	public void Kezeles_fill(String resp) {
 		Integer i = 0;
 		try {
@@ -60,7 +73,6 @@ public class Kezeles {
 					lepes[i].szin_r = jsonkezelesLepes.getInt("szin_r");
 					lepes[i].szin_g = jsonkezelesLepes.getInt("szin_g");
 					lepes[i].szin_b = jsonkezelesLepes.getInt("szin_b");
-					lepes[i].pszin = String.format("rgb(%d, %d, %d)", lepes[i].szin_r, lepes[i].szin_g, lepes[i].szin_b);
 					lepes[i].megjegyzes = jsonkezelesLepes.getString("megjegyzes");
 					lepes[i].pxtomb = jsonkezelesLepes.getString("pxtomb");
 				}
